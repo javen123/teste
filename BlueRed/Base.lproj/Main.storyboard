@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BlueRed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWj-gM-Jfq">
+                                <rect key="frame" x="257" y="275" width="87" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hide Donger"/>
+                                <connections>
+                                    <action selector="btnHideDongerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vYg-xd-iPH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOw-n9-JhW">
+                                <rect key="frame" x="221" y="498" width="159" height="30"/>
+                                <animations/>
+                                <state key="normal" title="HIde Moose and Rocco"/>
+                                <connections>
+                                    <action selector="btnHideMoosePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yv1-No-LZ7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="donger" translatesAutoresizingMaskIntoConstraints="NO" id="sfr-df-wtv">
+                                <rect key="frame" x="171" y="65" width="259" height="194"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mooseRocco" translatesAutoresizingMaskIntoConstraints="NO" id="Q15-Yz-8EW">
+                                <rect key="frame" x="240" y="327" width="120" height="120"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q15-Yz-8EW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8CC-ZC-2it"/>
+                            <constraint firstItem="IOw-n9-JhW" firstAttribute="top" secondItem="Q15-Yz-8EW" secondAttribute="bottom" constant="51" id="8sp-nc-NJg"/>
+                            <constraint firstItem="IOw-n9-JhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cjv-3K-yaa"/>
+                            <constraint firstItem="sfr-df-wtv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZK4-do-V86"/>
+                            <constraint firstItem="sfr-df-wtv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="amS-hY-jiz"/>
+                            <constraint firstItem="Q15-Yz-8EW" firstAttribute="top" secondItem="EWj-gM-Jfq" secondAttribute="bottom" constant="22" id="cOs-vy-ZbK"/>
+                            <constraint firstItem="EWj-gM-Jfq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lY2-6V-B92"/>
+                            <constraint firstItem="EWj-gM-Jfq" firstAttribute="top" secondItem="sfr-df-wtv" secondAttribute="bottom" constant="16" id="mES-sZ-Qas"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="donger" destination="sfr-df-wtv" id="c52-tv-XSj"/>
+                        <outlet property="moose" destination="Q15-Yz-8EW" id="51k-ZB-RMA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="donger" width="259" height="194"/>
+        <image name="mooseRocco" width="120" height="120"/>
+    </resources>
+</document>
