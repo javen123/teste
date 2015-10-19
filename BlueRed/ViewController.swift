@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         else {
             moose.hidden = true
         }
-
+//made a minor change to commment
     }
 }
 
